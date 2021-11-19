@@ -1,5 +1,9 @@
 class Word {
-    constructor(word, defintion, pictureUrl) {
+    word: string;
+    defintion: string;
+    pictureUrl: string;
+
+    constructor(word: string, defintion: string, pictureUrl:string) {
         this.word = word;
         this.defintion = defintion;
         this.pictureUrl = pictureUrl;
@@ -7,7 +11,12 @@ class Word {
 }
 
 class EmotionObject {
-    constructor(emotion, description, color, onomatopoeia) {
+    emotion: string;
+    description: string;
+    color: string;
+    onomatopoeia: string[];
+
+    constructor(emotion: string, description:string, color:string, onomatopoeia:string[]) {
         this.emotion = emotion;
         this.description = description;
         this.color = color;
@@ -21,7 +30,7 @@ class EmotionObject {
 
     }
 }
-//グローバル定数
+
 const dictionary = {
     "bark": "the sound made by a dog",
     "grunt": "issue a low, animal-like noise",
