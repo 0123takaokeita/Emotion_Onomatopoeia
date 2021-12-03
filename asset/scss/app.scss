@@ -1,22 +1,29 @@
-.red{
-    background-color: rgb(214, 108, 108);
-}
-.yellow{
-    background-color: rgb(231, 231, 103);
-}
-.beige{
-    background-color: beige;
-}
-.grey{
-    background-color: grey;
-}
-.purple{
-    background-color: rgb(184, 36, 184);
-}
-.green{
-    background-color: rgb(18, 161, 18);
-}
-.orange{
-    background-color: orange;
-}
+$red: rgb(175, 41, 41);
+$yellow: rgb(238, 238, 43);
+$beige: rgb(230, 230, 170);
+$grey: rgb(134, 122, 122);
+$purple: rgb(172, 27, 172);
+$green: rgb(22, 189, 22);
+$orange: rgb(230, 167, 51);
 
+.red {
+    background-color: $red;
+}
+.yellow {
+    background-color: $yellow;
+}
+.beige {
+    background-color: $beige;
+}
+.grey {
+    background-color: $grey;
+}
+.purple {
+    background-color: $purple;
+}
+.green {
+    background-color: $green;
+}
+.orange {
+    background-color: $orange;
+}
