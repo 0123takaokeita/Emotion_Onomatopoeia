@@ -1,10 +1,11 @@
 {
   "name": "emotion_onomatopoeia",
   "version": "1.0.0",
-  "description": "文字列キーと EmotionObject のハッシュマップが与えられます。 また、連想配列で表される辞書（dictionary）も用意されており、キーは単語、値は単語の定義や説明になります。 最後に、連想配列で表される写真用の辞書（dictionaryDictionary）があり、この連想配列では、キーは単語で値はその単語の画像を持つ URL になります。 **dictionary** と **pictureDictionary**は共にグローバル定数です。これらは読み取り専用になります。 Word データ構造には、以下の状態が含まれています。",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass asset/scss/ --output asset/css --output-style compressed --watch --source-map true"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/0123takaokeita/Emotion_Onomatopoeia/issues"
   },
-  "homepage": "https://github.com/0123takaokeita/Emotion_Onomatopoeia#readme"
+  "homepage": "https://github.com/0123takaokeita/Emotion_Onomatopoeia#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
