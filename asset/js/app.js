@@ -96,15 +96,15 @@ var emotions = [
 var app = document.getElementById('app');
 app.className = 'bg-light';
 // header Area
-var header = "<header class=bg-success vw-100 style=height:50px;>\n    <h2 class='text-light text-center'>Emotion Onomatopoeia</h2>\n    </header>";
+var header = "<header class=bg-success vw-100 shadow-lg style=height:50px;>\n    <h2 class='text-light text-center'>Emotion Onomatopoeia</h2>\n    </header>";
 // emotions status check
 console.table(emotions);
 console.table(emotions[0].onomatopoeia);
 // Create Link Area
-var categoryHeader = "<h1 class='text-secondary py-5'>Category</h1>";
-var categoryContets = "<ul class='row py-5 list-unstyled gap-3'>";
+var categoryHeader = "<h1 class='text-secondary pt-5 text-shadow'>Category</h1>";
+var categoryContets = "<ul class='row py-5 list-unstyled gap-5'>";
 for (var i = 0; i < emotions.length; i++) {
-    categoryContets += "\n        <li class='col-md p-5 " + emotions[i].color + "'>\n        <a href=\"#sec-" + i + "\" class='text-primary text-decoration-none'>" + emotions[i].emotion + "</a>\n        </li>";
+    categoryContets += "\n        <li class='col-3 p-5 rounded-pill shadow-lg " + emotions[i].color + "'>\n        <a href=\"#sec-" + i + "\" class='text-primary text-decoration-none'>" + emotions[i].emotion + "</a>\n        </li>";
 }
 categoryContets += '</ul>';
 // 感情詳細のBody
@@ -116,7 +116,7 @@ for (var i = 0; i < emotions.length; i++) {
         onomatopoeiaContets += "<li class=''>" + emotions[i].onomatopoeia[j] + "</li>";
     }
     ;
-    linkedContent += "\n            <li class='p-5 " + emotions[i].color + " mb-4 ' id='sec-" + i + "'>\n                <div class='container'>\n                    <h2>" + emotions[i].emotion + "</h2>\n                    <p>" + emotions[i].description + "</p>\n                    " + onomatopoeiaContets + "</ul>\n                </div>\n            </li>\n            ";
+    linkedContent += "\n            <li class='p-5 " + emotions[i].color + " mb-4 ' id='sec-" + i + "'>\n                <div class='container'>\n                    <h1>" + emotions[i].emotion + "</h1>\n                    <p>" + emotions[i].description + "</p>\n                    " + onomatopoeiaContets + "</ul>\n                </div>\n            </li>\n            ";
 }
 ;
 linkedContent += "</ul>";

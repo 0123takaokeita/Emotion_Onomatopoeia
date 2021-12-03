@@ -123,7 +123,7 @@ const app: HTMLElement = <HTMLElement>document.getElementById('app');
 app.className = 'bg-light'
 
 // header Area
-let header = `<header class=bg-success vw-100 style=height:50px;>
+let header = `<header class=bg-success vw-100 shadow-lg style=height:50px;>
     <h2 class='text-light text-center'>Emotion Onomatopoeia</h2>
     </header>`
 
@@ -132,11 +132,11 @@ console.table(emotions);
 console.table(emotions[0].onomatopoeia);
 
 // Create Link Area
-let categoryHeader: string = `<h1 class='text-secondary py-5'>Category</h1>`
-let categoryContets: string = `<ul class='row py-5 list-unstyled gap-3'>`
+let categoryHeader: string = `<h1 class='text-secondary pt-5 text-shadow'>Category</h1>`
+let categoryContets: string = `<ul class='row py-5 list-unstyled gap-5'>`
 for (let i: number = 0; i < emotions.length; i++) {
     categoryContets += `
-        <li class='col-md p-5 ${emotions[i].color}'>
+        <li class='col-3 p-5 rounded-pill shadow-lg ${emotions[i].color}'>
         <a href="#sec-${i}" class='text-primary text-decoration-none'>${emotions[i].emotion}</a>
         </li>`;
 }
@@ -154,7 +154,7 @@ for (let i: number = 0; i < emotions.length; i++) {
     linkedContent += `
             <li class='p-5 ${emotions[i].color} mb-4 ' id='sec-${i}'>
                 <div class='container'>
-                    <h2>${emotions[i].emotion}</h2>
+                    <h1>${emotions[i].emotion}</h1>
                     <p>${emotions[i].description}</p>
                     ${onomatopoeiaContets}</ul>
                 </div>
