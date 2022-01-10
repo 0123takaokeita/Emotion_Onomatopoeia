@@ -1,3 +1,33 @@
-.red{background-color:#af2929}.yellow{background-color:#eeee2b}.beige{background-color:#e6e6aa}.grey{background-color:#867a7a}.purple{background-color:#ac1bac}.green{background-color:#16bd16}.orange{background-color:#e6a733}.text-shadow{text-shadow:5px 7px 8px grey}
+.red {
+  background-color: #af2929;
+}
+
+.yellow {
+  background-color: #eeee2b;
+}
+
+.beige {
+  background-color: #e6e6aa;
+}
+
+.grey {
+  background-color: #867a7a;
+}
+
+.purple {
+  background-color: #ac1bac;
+}
+
+.green {
+  background-color: #16bd16;
+}
+
+.orange {
+  background-color: #e6a733;
+}
+
+.text-shadow {
+  text-shadow: 5px 7px 8px grey;
+}
 
 /*# sourceMappingURL=app.css.map */
